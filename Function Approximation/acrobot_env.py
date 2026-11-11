@@ -3,14 +3,13 @@ import torch
 from torch import optim
 from util import (
     collect_episode_mc,
-    discounted_reward,
-    simple_acrobot_policy,
-    evaluate_value_network_mc,
     collect_episode_td,
+    discounted_reward,
+    evaluate_value_network_mc,
     evaluate_value_network_td,
+    simple_acrobot_policy,
 )
 from value_prediction import ValueNetwork
-
 
 gamma = 0.9
 learning_rate = 0.001
